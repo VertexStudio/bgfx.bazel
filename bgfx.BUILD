@@ -58,7 +58,6 @@ cc_library(
     linkstatic = True,
     deps = [
         "@bimg",
-        "@bx",
     ],
 )
 
@@ -75,16 +74,11 @@ cc_library(
     linkstatic = True,
     deps = [
         ":bgfx",
-        "@bimg",
-        "@bx",
     ],
 )
 
 examples_deps = [
     ":common",
-    ":bgfx",
-    "@bimg",
-    "@bx",
 ]
 
 examples_linkopts = [
