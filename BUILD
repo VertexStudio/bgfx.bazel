@@ -1,16 +1,9 @@
 # bgfx.bazel - bgfx building in bazel
 # Author: Alex Rozgo <alex.rozgo@gmail.com>
 
-load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("@rules_cc//cc:defs.bzl", "cc_binary")
 
 package(default_visibility = ["//visibility:public"])
-
-cc_library(
-    name = "bgfx",
-    deps = [
-        "@bgfx//:common",
-    ],
-)
 
 cc_binary(
     name = "debugdraw",
@@ -22,6 +15,6 @@ cc_binary(
         "-ldl",
     ],
     deps = [
-        "@bgfx//:common",
+        "//bgfx:common",
     ],
 )
