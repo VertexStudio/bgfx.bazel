@@ -7,17 +7,17 @@ git clone --recursive git@github.com:VertexStudio/bgfx.bazel.git
 
 ### bx
 ```
-bazel build //bx:bx
+bazel build //bx:bx-linux
 ```
 
 ### bimg
 ```
-bazel build //bimg:bimg
+bazel build //bimg:bimg-linux
 ```
 
 ### bgfx
 ```
-bazel build //bgfx:bgfx
+bazel build //bgfx:bgfx-linux
 ```
 
 ## Examples
