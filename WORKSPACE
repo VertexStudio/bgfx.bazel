@@ -24,3 +24,27 @@ http_archive(
     strip_prefix = "benchmark-1.4.1",
     url = "https://github.com/google/benchmark/archive/v1.4.1.zip",
 )
+
+git_repository(
+    name = "build_bazel_rules_apple",
+    remote = "https://github.com/bazelbuild/rules_apple.git",
+    commit = "8dc8e519df3ab06c9842a9e6396edf592104c46b",
+)
+
+git_repository(
+    name = "build_bazel_apple_support",
+    remote = "https://github.com/bazelbuild/apple_support.git",
+    commit = "501b4afb27745c4813a88ffa28acd901408014e4",
+)
+
+load(
+    "@build_bazel_rules_apple//apple:repositories.bzl",
+    "apple_rules_dependencies",
+)
+apple_rules_dependencies()
+
+load(
+    "@build_bazel_apple_support//lib:repositories.bzl",
+    "apple_support_dependencies",
+)
+apple_support_dependencies()
