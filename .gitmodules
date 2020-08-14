@@ -1,9 +1,9 @@
 [submodule "bimg"]
 	path = bimg
-	url = git@github.com:VertexStudio/bimg.git
+	url = https://github.com/VertexStudio/bimg.git
 [submodule "bx"]
 	path = bx
-	url = git@github.com:VertexStudio/bx.git
+	url = https://github.com/VertexStudio/bx.git
 [submodule "bgfx"]
 	path = bgfx
-	url = git@github.com:VertexStudio/bgfx.git
+	url = https://github.com/VertexStudio/bgfx.git
